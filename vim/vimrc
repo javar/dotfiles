@@ -1,0 +1,83 @@
+" The last vim settings/options
+set nocompatible			
+
+" Plugins
+so ~/.vim/plugins.vim
+
+" Syntax
+syntax enable
+
+" Make backspace behave like every other editors
+set backspace=indent,eol,start
+
+" The default leader id \, but a comma is much better
+let mapleader = ','
+
+" Let's active line numbers
+set number
+
+" Global tab width
+set tabstop=2 
+set shiftwidth=2
+set shiftround
+
+" Use spaces not tabs
+set expandtab
+
+" See cursor line
+set cursorline
+
+" Show the cursor positions all the time
+set ruler
+
+" Always display the status line
+set laststatus=2
+
+" Not Swap files
+set noswapfile
+
+" Encoding type
+set encoding=utf-8
+
+" Visuals
+set background=dark
+
+"-------------------- Mappings  -------------------"
+nmap <Leader><space> :nohlsearch<cr>			" Add simple highlight removal
+nmap <leader>i mmgg=G`m<CR>				" Indent all the file
+
+
+" NERDTree ctrl+n
+map <C-n> :NERDTreeToggle<CR>
+
+" Open Gemfile
+map <leader>gg :e Gemfile<cr>
+
+"-------------------- Search  -------------------"
+set hlsearch
+set incsearch
+
+"-------------------- Split Management  -------------------"
+set splitbelow
+set splitright
+nmap <C-J> <C-W><C-J>
+nmap <C-K> <C-W><C-K>
+nmap <C-H> <C-W><C-H>
+nmap <C-L> <C-W><C-L>
+
+"-------------------- CtrlP mappings -------------------"
+map <leader>f :CtrlP .<cr>
+map <leader>gv :CtrlP app/views<cr>
+map <leader>gc :CtrlP app/controllers<cr>
+map <leader>gm :CtrlP app/models<cr>
+map <leader>gh :CtrlP app/helpers<cr>
+map <leader>gs :CtrlP app/services<cr>
+map <leader>gl :CtrlP lib<cr>
+map <leader>gp :CtrlP public<cr>
+
+" Automatically source the vimrc file on save
+augroup autosourcing                                  " Automatically source the vimrc file on save
+  autocmd!
+  autocmd BufWritePost .vimrc source %
+augroup END
+
