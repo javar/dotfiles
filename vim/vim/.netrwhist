@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/javar/Library/Application Support/Tunnelblick/Configurations/FwVLC-jaristizab VLC VPN (Main).tblk'
-let g:netrw_dirhist_2='/Users/javar/Developer/code/platform'
-let g:netrw_dirhist_3='/Users/javar/.vim'
-let g:netrw_dirhist_4='/Users/javar/Developer/code/services-dashboard'
-let g:netrw_dirhist_5='/Users/javar/.vim/bundle/Vundle.vim'
-let g:netrw_dirhist_6='/Users/javar/.vim'

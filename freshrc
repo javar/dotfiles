@@ -1,6 +1,0 @@
-# Bin files
-fresh freshshell/fresh bin/fresh --bin
-
-# Vim
-fresh vim/vimrc --file
-fresh vim/vim --file=~/.vim/
