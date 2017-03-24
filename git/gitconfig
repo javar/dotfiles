@@ -1,0 +1,10 @@
+[user]
+  name = Javier Aristizábal
+  email = javar@users.noreply.github.com
+  signingkey = 325384A5B99E58CE
+[github]
+  user = javar
+[commit]
+  gpgsign = true
+[core]
+  editor = /usr/bin/vim
