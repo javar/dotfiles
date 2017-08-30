@@ -35,10 +35,13 @@ function check_and_install_vundle() {
   fi
 }
 
+# BASH
+check_and_link_file ".bashrc" ".bashrc"
+
 # GIT
-check_and_link_file "git/gitconfig" ".gitconfig"
+check_and_link_file ".gitconfig" ".gitconfig"
 
 # VIM
-check_and_link_file "vim/vimrc" ".vimrc"
-check_and_link_directory "vim/vim" ".vim"
-check_and_install_vundle
+check_and_link_file ".vimrc" ".vimrc"
+#check_and_link_directory ".vim" ".vim"
+#check_and_install_vundle
