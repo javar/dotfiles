@@ -36,7 +36,7 @@ function check_and_install_vundle() {
 }
 
 # BASH
-check_and_link_file ".bashrc" ".bashrc"
+check_and_link_file ".bash_profile" ".bash_profile"
 
 # GIT
 check_and_link_file ".gitconfig" ".gitconfig"
