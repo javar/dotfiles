@@ -33,6 +33,7 @@ alias grc='git rebase --continue'
 alias grh='git reset HEAD'
 alias grhh='git reset HEAD --hard'
 alias gri='git rebase -i'
+alias gst='git st'
 
 alias ggpull='git pull origin $(git_current_branch)'
 alias ggpush='git push origin $(git_current_branch)'
