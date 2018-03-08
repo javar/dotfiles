@@ -43,5 +43,12 @@ check_and_link_file ".gitconfig" ".gitconfig"
 
 # VIM
 check_and_link_file ".vimrc" ".vimrc"
-#check_and_link_directory ".vim" ".vim"
-#check_and_install_vundle
+check_and_link_directory "vim" ".vim"
+check_and_install_vundle
+if which vim && which git &> /dev/null; then
+  echo "Installing vim plugins..."
+  vim +PluginInstall +qall
+  echo "vim plugins installed"
+else
+  echo "Vim plugins were not installed. git is not available."
+fi
