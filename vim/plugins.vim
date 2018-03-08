@@ -16,6 +16,7 @@ Plugin 'thoughtbot/vim-rspec' " RSpec runner
 Plugin 'tlib'
 Plugin 'tComment'
 Plugin 'L9'
+Plugin 'scrooloose/syntastic' " Syntax checker
 
 call vundle#end()
 filetype plugin indent on
