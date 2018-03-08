@@ -14,10 +14,14 @@ set showmatch
 set incsearch
 set hlsearch
 set ignorecase smartcase                                " make searches case-sensitive only if they contain upper-case characters
-"set cursorline                                         " highlight current line
+set cursorline                                         " highlight current line
 set cmdheight=1
 set switchbuf=useopen
 set winwidth=79
+
+set wildmenu                      " Enhanced command line completion.
+set wildmode=list:longest         " Complete files like a shell.
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.scssc,*.sassc
 
 set noswapfile
 
@@ -65,7 +69,7 @@ map <leader>gg :e Gemfile<cr>                           " Open Gemfile
 map <C-n> :NERDTreeToggle<CR>                           " NERDTree ctrl+n
 
 map <leader>f :CtrlP .<cr>                              " CtrlP mappings
-
+let g:airline_powerline_fonts = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ALIASES
