@@ -14,7 +14,7 @@ set showmatch
 set incsearch
 set hlsearch
 set ignorecase smartcase                                " make searches case-sensitive only if they contain upper-case characters
-set cursorline                                         " highlight current line
+" set cursorline                                         " highlight current line
 set cmdheight=1
 set switchbuf=useopen
 set winwidth=79
@@ -27,6 +27,10 @@ set noswapfile
 
 set backspace=indent,eol,start						              " allow backspacing over everything in insert mode
 set showcmd                                             " display incomplete commands
+set nobackup                          " Don't make a backup before overwriting a file.
+set nowritebackup                     " Again
+set noswapfile                        " And again
+
 syntax on                                               " Enable highlighting for syntax
 
 let mapleader = ','                                     " The default leader id \, but a comma is much better
@@ -84,9 +88,8 @@ nnoremap <right> <nop>
 " NICE TO HAVE
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd BufWritePre * :%s/\s\+$//e                      " remove extra whitespaces
-
-" Event syntax highlighting
-autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
+autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby   " Event syntax highlighting
+let NERDTreeShowHidden=1                                  " Show dot files NERDTree
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " AUTO COMMANDS
