@@ -28,8 +28,9 @@ set noswapfile
 set backspace=indent,eol,start						              " allow backspacing over everything in insert mode
 set showcmd                                             " display incomplete commands
 set nobackup                          " Don't make a backup before overwriting a file.
-set nowritebackup                     " Again
-set noswapfile                        " And again
+set nowritebackup                     " And again
+set directory=$HOME/.vim/tmp          " Keep swap files in one location
+set backupdir=$HOME/.vim/_backup      " where to put backup files.
 
 syntax on                                               " Enable highlighting for syntax
 
