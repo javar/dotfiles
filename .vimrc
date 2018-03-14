@@ -76,6 +76,13 @@ map <C-n> :NERDTreeToggle<CR>                           " NERDTree ctrl+n
 map <leader>f :CtrlP .<cr>                              " CtrlP mappings
 let g:airline_powerline_fonts = 1
 
+" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+let g:rspec_command = "!bundle exec rspec {spec}"
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ALIASES
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
