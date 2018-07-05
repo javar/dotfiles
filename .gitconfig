@@ -34,5 +34,3 @@
   edit-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; $EDITOR `f`"
   add-unmerged = "!f() { git ls-files --unmerged | cut -f2 | sort -u ; }; git add `f`"
   puf = push --force-with-lease
-[branch]
-  autosetuprebase = always
