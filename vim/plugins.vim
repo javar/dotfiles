@@ -13,9 +13,7 @@ Plugin 'tpope/vim-endwise' " Wisely add 'end' in ruby, endfunction/endif/more
 Plugin 'godlygeek/tabular' " Text filtering and alignment
 Plugin 'elixir-editors/vim-elixir' " Elixir plugin
 Plugin 'thoughtbot/vim-rspec' " RSpec runner
-Plugin 'tlib'
 Plugin 'tComment'
-Plugin 'L9'
 Plugin 'scrooloose/syntastic' " Syntax checker
 
 call vundle#end()
